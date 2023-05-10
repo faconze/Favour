@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="form.css">
+<form class="payment">
+
+    
+    <header class="header" id="header">
+
+        <nav class="nav" id="nav">
+
+            <div class="logo">
+
+
+                <img class="logo__img" src="./dressinstyle/assets/logo.png" alt=""> 
+
+            </div>
+
+
+
+            <ul class="nav-list">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Feature</a></li>
+                <li><a href="shop.html">Order</a></li>
+              
+            </ul>
+
+
+
+            <button class="cta-nav"> <li><a href="shop.html">Shop Now!</a></li></button>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+	<body>
+		<div class="panel panel-default credit-card-box">
+			<div class="panel-heading display-table">
+				<div class="row display-tr">
+					<h3 class="panel-title display-td">Payment Details</h3>
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<label for="cardNumber">CARD NUMBER</label>
+		<input type="text" size="10" class="form-control" name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number" required autofocus />
+		<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+		<label for="cardExpir">EXPIRATION DATE</label>
+		<input type="text" size="5" class="form-control" name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required />
+		<label for="cardCVC">CV CODE</label>
+		<input type="text" size="3" class="form-control" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" required />
+		<label for="couponCode">DISCOUNT CODE</label>
+		<input type="text" class="form-control" name="couponCode" />
+		<br>
+		<button class="blueButton" style="float:right;" type="submit">Confirm Payment</button>
+		<br><br>
+</form>
+<!-- If you're using Stripe for payments -->
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+</form>
+</body>
